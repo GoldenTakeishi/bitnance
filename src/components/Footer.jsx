@@ -42,8 +42,8 @@ const footerArray = [
         link: "#",
       },
       {
-        name: "Audit",
-        link: "#",
+        name: "Latest News",
+        link: "https://news.google.com/search?for=bitnance&hl=en-US&gl=US&ceid=US%3Aen",
       },
     ],
   },
@@ -52,11 +52,7 @@ const footerArray = [
     textArray: [
       {
         name: "Support",
-        link: "#",
-      },
-      {
-        name: "LoremIpsum@gmail.com",
-        link: "#",
+        link: "https://t.me/bitnancetoken",
       },
     ],
   },
