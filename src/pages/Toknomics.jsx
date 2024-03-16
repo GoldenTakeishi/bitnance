@@ -11,16 +11,16 @@ function Toknomics() {
       para: " The token launches with a low, finite supply of 10.5 million coins which is done by design to increase its demand and potential and to help control and stabilize its ongoing growth.",
     },
     {
-      text: "Sale",
+      text: "Root (sale & liquidity)",
       value: "7,750,000",
-      text1: "For Sale",
-      para: "This project will put 7,750,000 tokens up for sale at launch",
+      text1: "Root (sale & liquidity)",
+      para: "The project will put 7,750,000 tokens up for presale and liquidity at launch",
     },
     {
-      text: "Reserved",
+      text: "Exchanges",
       value: "2,750,000",
-      text1: "Reserved",
-      para: "2,750,000 reserved for sale on the exchange, giving early investors and adopters the chance to boost their earnings before it is for sale to the masses.",
+      text1: "Exchanges",
+      para: "2,750,000 reserved for sale on the centralized exchanges.",
     },
   ];
   return (
