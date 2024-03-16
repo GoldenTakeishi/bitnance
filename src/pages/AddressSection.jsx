@@ -24,32 +24,20 @@ import { ToastNotify } from "../components/SmallComponents/AppComponents";
 export const socialArray = [
   {
     img: twiiterIcon,
-    link: "#",
-  },
-  {
-    img: tiktokIcon,
-    link: "#",
+    link: "https://twitter.com/BitnanceToken",
   },
   {
     img: telegramIcon,
-    link: "#",
+    link: "https://t.me/bitnancetoken",
   },
   {
     img: radditIcon,
-    link: "#",
-  },
-  {
-    img: instagramIcon,
-    link: "#",
-  },
-  {
-    img: discordIcon,
-    link: "#",
+    link: "https://reddit.com/r/bitnance",
   },
 ];
 
 function AddressSection() {
-  const copyAddress = "0xb2cb194701094239dB774049d9d72f7837944a17";
+  const copyAddress = "to be determined";
   const [alertState, setAlertState] = useState({
     open: false,
     message: "",
