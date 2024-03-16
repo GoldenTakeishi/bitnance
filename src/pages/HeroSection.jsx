@@ -148,7 +148,7 @@ function HeroSection() {
                     component="a"
                     href="https://news.google.com/search?for=bitnance&hl=en-US&gl=US&ceid=US%3Aen" // Change the href to your desired URL
                     >
-                    Latest News
+                    News
                     </Button>
                   </Stack>
                 </Box>
