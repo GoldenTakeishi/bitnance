@@ -308,7 +308,7 @@ function PresaleBox() {
                 color: "#ffffff",
               }}
             >
-              $2,000,000
+              4,500,000
             </Typography>
           </Stack>
           <Stack
