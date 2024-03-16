@@ -168,7 +168,7 @@ function PresaleBox() {
         0
       );
       settotalRaised(toLocalFormat(total));
-      let progress = (total / 2000000) * 100;
+      let progress = (sold / 4500000) * 100;
       setProgressBar(progress);
       setCallFunction(false);
     } catch (error) {
@@ -284,7 +284,7 @@ function PresaleBox() {
           </Typography>
         </Box>
         <Box>
-          <TimerCountDown time={1710259145} />
+          <TimerCountDown time={1721135978} />
         </Box>
         <Stack>
           <Stack direction="row" justifyContent="space-between">
