@@ -100,7 +100,7 @@ function HeroSection() {
                     }}
                   >
                     BitNance Token ($BTN) is a modern take on Bitcoin yet backed
-                    by improved security and community driven support, making it
+                    by improved security and community driven support on BNB Chain, making it
                     a store-of-value crypto unlike the rest.
                   </Typography>
                   <Stack flexDirection={"row"} my={2} gap={2}>
@@ -122,6 +122,8 @@ function HeroSection() {
                           background: "#F2F2F2",
                         },
                       }}
+                    component="a"
+                    href="https://news.google.com/search?for=bitnance&hl=en-US&gl=US&ceid=US%3Aen" // Change the href to your desired URL
                     >
                       White Paper
                     </Button>
@@ -143,8 +145,10 @@ function HeroSection() {
                           background: "#F0B90B",
                         },
                       }}
+                    component="a"
+                    href="https://news.google.com/search?for=bitnance&hl=en-US&gl=US&ceid=US%3Aen" // Change the href to your desired URL
                     >
-                      Audit
+                      Latest News
                     </Button>
                   </Stack>
                 </Box>
