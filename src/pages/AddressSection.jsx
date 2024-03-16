@@ -148,15 +148,15 @@ function AddressSection() {
             >
               {[
                 {
-                  title: "Supply",
+                  title: "Total Supply",
                   value: "10,500,000",
                 },
                 {
-                  title: "Sale",
+                  title: "Root (presale & dex)",
                   value: "7,750,000",
                 },
                 {
-                  title: "Reserve",
+                  title: "Exchanges",
                   value: "2,750,000",
                 },
               ].map(({ title, value }) => (
