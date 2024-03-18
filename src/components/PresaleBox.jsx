@@ -168,7 +168,7 @@ function PresaleBox() {
         0
       );
       settotalRaised(toLocalFormat(total));
-      let progress = (sold / 4500000) * 100;
+      let progress = (sold / 5600000) * 100;
       setProgressBar(progress);
       setCallFunction(false);
     } catch (error) {
