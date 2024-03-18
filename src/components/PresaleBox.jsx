@@ -284,7 +284,7 @@ function PresaleBox() {
           </Typography>
         </Box>
         <Box>
-          <TimerCountDown time={1721135978} />
+          <TimerCountDown time={1729404000} />
         </Box>
         <Stack>
           <Stack direction="row" justifyContent="space-between">
