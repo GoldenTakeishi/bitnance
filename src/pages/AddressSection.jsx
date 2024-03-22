@@ -32,7 +32,7 @@ export const socialArray = [
   },
   {
     img: radditIcon,
-    link: "https://reddit.com/r/bitnance",
+    link: "https://reddit.com/r/bitnancetoken",
   },
 ];
 
