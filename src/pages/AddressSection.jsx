@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import {
   Box,
   Container,
@@ -7,23 +6,21 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import React, { useState } from "react";
 import {
   bscScanLogo,
   copyIcon,
   metaMaskIcon,
-  twitterIcon, // corrected from 'twiiterIcon'
-  tiktokIcon,
+  twiiterIcon,
   telegramIcon,
-  redditIcon, // corrected from 'radditIcon'
-  instagramIcon,
-  discordIcon,
+  radditIcon,
   dividerImg,
 } from "../components/SmallComponents/Images";
 import { ToastNotify } from "../components/SmallComponents/AppComponents";
 
 export const socialArray = [
   {
-    img: twitterIcon, // corrected from 'twiiterIcon'
+    img: twiiterIcon,
     link: "https://twitter.com/BitnanceToken",
   },
   {
@@ -31,19 +28,18 @@ export const socialArray = [
     link: "https://t.me/bitnancetoken",
   },
   {
-    img: redditIcon, // corrected from 'radditIcon'
+    img: radditIcon,
     link: "https://reddit.com/r/bitnancetoken",
   },
 ];
 
 function AddressSection() {
-  const copyAddress = "to be determined";
+  const copyAddress = "coming soon";
   const [alertState, setAlertState] = useState({
     open: false,
     message: "",
     severity: undefined,
   });
-
   const showAlert = (message, severity = "error") => {
     setAlertState({
       open: true,
@@ -56,13 +52,12 @@ function AddressSection() {
     navigator.clipboard.writeText(copyAddress);
     showAlert("Address Copied", "success");
   };
-
   return (
     <Box mb={4} id="contact">
       <ToastNotify alertState={alertState} setAlertState={setAlertState} />
       <Container maxWidth="xl">
         <Stack
-          flexDirection={{ xs: "column", md: "row" }}
+          flexDirection={{ xs: "coloumn", md: "row" }}
           justifyContent={"space-between"}
           alignItems={"center"}
           sx={{
@@ -127,19 +122,17 @@ function AddressSection() {
             justifyContent={"center"}
             gap={0.5}
           >
-            {socialArray.map(({ img, link }) => (
-              <a key={link} href={link} target="_blank" rel="noopener noreferrer">
-                <IconButton>
-                  <Box
-                    component={"img"}
-                    alt=""
-                    src={img}
-                    sx={{
-                      width: "25px",
-                    }}
-                  />
-                </IconButton>
-              </a>
+            {socialArray?.map(({ img, link }) => (
+              <IconButton key={img}>
+                <Box
+                  component={"img"}
+                  alt=""
+                  src={img}
+                  sx={{
+                    width: "25px",
+                  }}
+                />
+              </IconButton>
             ))}
           </Stack>
         </Stack>
@@ -152,15 +145,15 @@ function AddressSection() {
             >
               {[
                 {
-                  title: "Total Supply",
+                  title: "Supply",
                   value: "10,500,000",
                 },
                 {
-                  title: "Root (presale & dex)",
+                  title: "Sale",
                   value: "7,750,000",
                 },
                 {
-                  title: "Exchanges",
+                  title: "Reserve",
                   value: "2,750,000",
                 },
               ].map(({ title, value }) => (
