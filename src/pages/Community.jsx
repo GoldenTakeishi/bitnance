@@ -48,27 +48,31 @@ function Community() {
               </Typography>
             </Box>
             <Box>
-              <Button
-                sx={{
-                  color: "#F2F2F2",
-                  background: "#F0B90B",
-                  fontSize: "14px",
-                  textTransform: "capitalize",
-                  fontFamily: "Proxima Nova",
-                  borderRadius: "8px",
-                  fontWeight: "700",
-                  height: "40px",
-                  width: "150px",
-                  "&.Mui-disabled": {
-                    color: "#979EA7",
-                  },
-                  "&:hover": {
-                    background: "#F0B90B",
-                  },
-                }}
-              >
-                JOIN COMMUNITY
-              </Button>
+           <Button
+            component="a"
+            href="https://t.me/bitnancetoken"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              color: "#F2F2F2",
+              background: "#F0B90B",
+              fontSize: "14px",
+              textTransform: "capitalize",
+              fontFamily: "Proxima Nova",
+              borderRadius: "8px",
+              fontWeight: "700",
+              height: "40px",
+              width: "150px",
+              "&.Mui-disabled": {
+                color: "#979EA7",
+              },
+              "&:hover": {
+                background: "#F0B90B",
+              },
+            }}
+          >
+            JOIN COMMUNITY
+          </Button>
             </Box>
           </Stack>
           <Stack mt={2} pl={{ xs: 2, md: 0 }}>
