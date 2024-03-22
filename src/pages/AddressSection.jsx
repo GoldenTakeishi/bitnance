@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   Box,
   Container,
@@ -6,15 +7,14 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import React, { useState } from "react";
 import {
   bscScanLogo,
   copyIcon,
   metaMaskIcon,
-  twiiterIcon,
+  twitterIcon, // corrected from 'twiiterIcon'
   tiktokIcon,
   telegramIcon,
-  radditIcon,
+  redditIcon, // corrected from 'radditIcon'
   instagramIcon,
   discordIcon,
   dividerImg,
@@ -23,7 +23,7 @@ import { ToastNotify } from "../components/SmallComponents/AppComponents";
 
 export const socialArray = [
   {
-    img: twiiterIcon,
+    img: twitterIcon, // corrected from 'twiiterIcon'
     link: "https://twitter.com/BitnanceToken",
   },
   {
@@ -31,7 +31,7 @@ export const socialArray = [
     link: "https://t.me/bitnancetoken",
   },
   {
-    img: radditIcon,
+    img: redditIcon, // corrected from 'radditIcon'
     link: "https://reddit.com/r/bitnancetoken",
   },
 ];
@@ -43,6 +43,7 @@ function AddressSection() {
     message: "",
     severity: undefined,
   });
+
   const showAlert = (message, severity = "error") => {
     setAlertState({
       open: true,
@@ -55,12 +56,13 @@ function AddressSection() {
     navigator.clipboard.writeText(copyAddress);
     showAlert("Address Copied", "success");
   };
+
   return (
     <Box mb={4} id="contact">
       <ToastNotify alertState={alertState} setAlertState={setAlertState} />
       <Container maxWidth="xl">
         <Stack
-          flexDirection={{ xs: "coloumn", md: "row" }}
+          flexDirection={{ xs: "column", md: "row" }}
           justifyContent={"space-between"}
           alignItems={"center"}
           sx={{
@@ -125,17 +127,19 @@ function AddressSection() {
             justifyContent={"center"}
             gap={0.5}
           >
-            {socialArray?.map(({ img, link }) => (
-              <IconButton key={img}>
-                <Box
-                  component={"img"}
-                  alt=""
-                  src={img}
-                  sx={{
-                    width: "25px",
-                  }}
-                />
-              </IconButton>
+            {socialArray.map(({ img, link }) => (
+              <a key={link} href={link} target="_blank" rel="noopener noreferrer">
+                <IconButton>
+                  <Box
+                    component={"img"}
+                    alt=""
+                    src={img}
+                    sx={{
+                      width: "25px",
+                    }}
+                  />
+                </IconButton>
+              </a>
             ))}
           </Stack>
         </Stack>
