@@ -60,10 +60,6 @@ const navArray = [
     text: "Community",
     link: "/#community",
   },
-  {
-    text: "Contact",
-    link: "/#contact",
-  },
 ];
 
 export default function Header() {
