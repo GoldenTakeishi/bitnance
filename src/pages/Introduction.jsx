@@ -109,8 +109,8 @@ function Introduction() {
                 holder grow together!
               </Typography>
               <Stack my={3}>
-                <StyledButtonTwo width="140px"> Learn More</StyledButtonTwo>
-              </Stack>
+              <StyledButtonTwo as="a" href="/WhitePaper.pdf" width="140px">Read WP</StyledButtonTwo>
+            </Stack>
             </Stack>
           </Grid>
           <Grid item xs={12}>
