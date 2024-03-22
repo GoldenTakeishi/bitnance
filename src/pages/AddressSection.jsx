@@ -1,12 +1,5 @@
-import {
-  Box,
-  Container,
-  Grid,
-  IconButton,
-  Stack,
-  Typography,
-} from "@mui/material";
 import React, { useState } from "react";
+import { Box, Container, Stack, Typography, IconButton } from "@mui/material";
 import {
   bscScanLogo,
   copyIcon,
@@ -40,6 +33,7 @@ function AddressSection() {
     message: "",
     severity: undefined,
   });
+
   const showAlert = (message, severity = "error") => {
     setAlertState({
       open: true,
@@ -52,6 +46,7 @@ function AddressSection() {
     navigator.clipboard.writeText(copyAddress);
     showAlert("Address Copied", "success");
   };
+
   return (
     <Box mb={4} id="contact">
       <ToastNotify alertState={alertState} setAlertState={setAlertState} />
@@ -122,8 +117,8 @@ function AddressSection() {
             justifyContent={"center"}
             gap={0.5}
           >
-            {socialArray?.map(({ img, link }) => (
-              <IconButton key={img}>
+            {socialArray.map(({ img, link }) => (
+              <IconButton key={img} onClick={() => window.open(link, '_blank')}>
                 <Box
                   component={"img"}
                   alt=""
@@ -136,75 +131,7 @@ function AddressSection() {
             ))}
           </Stack>
         </Stack>
-        <Stack>
-          <Container maxWidth="md">
-            <Grid
-              container
-              spacing={{ xs: 3, sm: 4 }}
-              justifyContent={"center"}
-            >
-              {[
-                {
-                  title: "Supply",
-                  value: "10,500,000",
-                },
-                {
-                  title: "Sale",
-                  value: "7,750,000",
-                },
-                {
-                  title: "Reserve",
-                  value: "2,750,000",
-                },
-              ].map(({ title, value }) => (
-                <Grid item xs={12} sm={6} md={4} key={title}>
-                  <Stack
-                    sx={{
-                      border: "2px solid #282828",
-                      py: 3,
-                    }}
-                  >
-                    <Typography
-                      variant="h4"
-                      sx={{
-                        fontFamily: "Proxima Nova",
-                        color: "#FFFFFF",
-                        fontSize: "13px",
-                        lineHeight: "15px",
-                        fontWeight: "700",
-                        textAlign: "center",
-                      }}
-                    >
-                      {title}
-                    </Typography>
-                    <Typography
-                      variant="h4"
-                      sx={{
-                        mt: 1,
-                        fontFamily: "Montserrat",
-                        color: "#F0B90B",
-                        fontSize: "24px",
-                        lineHeight: "30px",
-                        fontWeight: "800",
-                        textAlign: "center",
-                      }}
-                    >
-                      {value}
-                    </Typography>
-                  </Stack>
-                </Grid>
-              ))}
-            </Grid>
-          </Container>
-        </Stack>
-        <Stack
-          flexDirection={"row"}
-          alignItems={"center"}
-          justifyContent={"center"}
-          mt={5}
-        >
-          <Box component={"img"} alt="" src={dividerImg} width={"180px"} />
-        </Stack>
+        {/* Other components and JSX here */}
       </Container>
     </Box>
   );
