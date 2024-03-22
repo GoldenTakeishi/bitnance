@@ -39,7 +39,7 @@ const footerArray = [
     textArray: [
       {
         name: "WhitePaper",
-        link: "#",
+        link: "/BitNanceWhitepaper.pdf",
       },
       {
         name: "Latest News",
